@@ -1,0 +1,13 @@
+name: Mi workflow
+
+on: push
+
+jobs:
+  tareas:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Bajar codigo
+        uses: actions/checkout@v4
+
+      - name: Probar codigo
+        run: python3 main.py
